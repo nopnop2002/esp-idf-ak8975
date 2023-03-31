@@ -5,9 +5,7 @@ First, find the offset value for each axis.
 As you can see, the X and Y axes are quite off-center.   
 ![ak8975-calib-1](https://user-images.githubusercontent.com/6020549/229248487-4ef39253-7bc9-4c86-a70f-0af2390a5973.jpg)
 
-
-
-And display the orientation.
+And display the orientation.   
 ![ak8975-heading](https://user-images.githubusercontent.com/6020549/229248493-17fb6543-8c72-4a39-bebd-cfd7e292426c.jpg)
 
 
