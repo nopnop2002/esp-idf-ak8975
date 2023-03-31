@@ -71,7 +71,7 @@ or
 http://esp32.local/
 ```
 
-As you move the IMU it plots the X, Y and Z values.   
+As you move the compass it plots the X, Y and Z values.   
 X, Y, Z offset are displayed.   
 
 ![ak8975-calib-1](https://user-images.githubusercontent.com/6020549/229249418-fb4431ed-ba92-42ba-9964-71711b448361.jpg)
@@ -98,7 +98,7 @@ idf.py flash
 
 
 ### Configuration   
-To find the offset value, set the compass offset to 0.   
+Sets the compass offset obtained by calibration.   
 ![config-top](https://user-images.githubusercontent.com/6020549/229249348-21ca8f80-e976-4ddb-8bca-435c475a3290.jpg)
 ![config-app](https://user-images.githubusercontent.com/6020549/229249346-0da21399-9640-4708-bdb6-beed7549d55a.jpg)
 
