@@ -11,7 +11,7 @@
 MessageBufferHandle_t xMessageBufferToClient;
 
 static const char *TAG = "MAIN";
-static const char *MDNS_HOSTNAME = "ESP32";
+static const char *MDNS_HOSTNAME = "esp32";
 
 extern "C" {
 	void app_main(void);
