@@ -6,7 +6,7 @@ As you can see, the X and Y axes are quite off-center.
 ![ak8975-calib-1](https://user-images.githubusercontent.com/6020549/229248487-4ef39253-7bc9-4c86-a70f-0af2390a5973.jpg)
 
 And display the orientation.   
-![ak8975-heading-1](https://user-images.githubusercontent.com/6020549/232189281-d5b569be-e0c1-43a8-bfcb-cb6777c9c389.jpg)
+![ak8975-heading-1](https://user-images.githubusercontent.com/6020549/232190029-ea4f85d6-8a32-46f7-9d71-04c42389296e.jpg)
 
 
 
@@ -116,5 +116,6 @@ http://esp32.local/
 ```
 
 Click the mouse to change the display.   
-![ak8975-heading-1](https://user-images.githubusercontent.com/6020549/232189281-d5b569be-e0c1-43a8-bfcb-cb6777c9c389.jpg)
-![ak8975-heading-2](https://user-images.githubusercontent.com/6020549/232189288-6913dace-c80b-4e9d-afab-d53534ed4a49.jpg)
+![ak8975-heading-1](https://user-images.githubusercontent.com/6020549/232190029-ea4f85d6-8a32-46f7-9d71-04c42389296e.jpg)
+![ak8975-heading-2](https://user-images.githubusercontent.com/6020549/232190031-57866343-e108-46f1-9d92-82666de43ae3.jpg)
+
