@@ -26,7 +26,7 @@ websocket.onopen = function(evt) {
 
 websocket.onmessage = function(evt) {
 	var msg = evt.data;
-	console.log("msg=" + msg);
+	//console.log("msg=" + msg);
 	var values = msg.split('\4'); // \4 is EOT
 	//console.log("values=" + values);
 	switch(values[0]) {
@@ -37,10 +37,12 @@ websocket.onmessage = function(evt) {
 			break;
 
 		case 'DATA':
-			console.log("DATA values[1]=" + values[1]);
-			var val1 = parseInt(values[1], 10);
+			//console.log("DATA values[1]=" + values[1]);
+			var val1 = parseFloat(values[1]);
 			gauge1.value = val1;
-			gauge1.update({ valueText: values[1] });
+			gauge1.update({ valueText: val1.toFixed(1) });
+			gauge2.value = val1;
+			gauge2.update({ valueText: val1.toFixed(1) });
 			break;
 
 		default:

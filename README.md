@@ -115,4 +115,6 @@ or
 http://esp32.local/
 ```
 
-![ak8975-heading](https://user-images.githubusercontent.com/6020549/229249937-d7a7d340-b154-4414-a3c5-1a3f2c3795db.jpg)
+Click the mouse to change the display.   
+![ak8975-heading-1](https://user-images.githubusercontent.com/6020549/232189281-d5b569be-e0c1-43a8-bfcb-cb6777c9c389.jpg)
+![ak8975-heading-2](https://user-images.githubusercontent.com/6020549/232189288-6913dace-c80b-4e9d-afab-d53534ed4a49.jpg)
