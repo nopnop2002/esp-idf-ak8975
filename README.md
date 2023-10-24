@@ -11,8 +11,9 @@ And display the orientation.
 
 
 # Software requiment
-ESP-IDF V4.4/V5.0.   
+ESP-IDF V4.4/V5.x.   
 ESP-IDF V5.0 is required when using ESP32-C2.   
+ESP-IDF V5.1 is required when using ESP32-C6.   
 
 
 # Hardware requirements
@@ -20,7 +21,7 @@ AK8975 3-axis Electronic Compass
 
 
 # Wireing
-|AK8975||ESP32|ESP32-S2/S3|ESP32-C2/C3||
+|AK8975||ESP32|ESP32-S2/S3|ESP32-C2/C3/C6||
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |VCC|--|3.3V|3.3V|3.3V||
 |GND|--|GND|GND|GND||
@@ -48,7 +49,7 @@ AK8975 3-axis Electronic Compass
 ```
 git clone https://github.com/nopnop2002/esp-idf-ak8975
 cd esp-idf-ak8975/calibrate
-idf.py set-target {esp32/esp32s2/esp32s3/esp32c2/esp32c3}
+idf.py set-target {esp32/esp32s2/esp32s3/esp32c2/esp32c3/esp32c6}
 idf.py menuconfig
 idf.py flash
 ```
@@ -91,7 +92,7 @@ If you set the offset you got from the calibration and run it again, the circle 
 ```
 git clone https://github.com/nopnop2002/esp-idf-ak8975
 cd esp-idf-ak8975/heading
-idf.py set-target {esp32/esp32s2/esp32s3/esp32c2/esp32c3}
+idf.py set-target {esp32/esp32s2/esp32s3/esp32c2/esp32c3/esp32c6}
 idf.py menuconfig
 idf.py flash
 ```
