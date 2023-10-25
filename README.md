@@ -64,7 +64,6 @@ To find the offset value, set the compass offset to 0.
 ESP32 acts as a web server.   
 I used [this](https://github.com/Molorius/esp32-websocket) component.   
 This component can communicate directly with the browser.   
-It's a great job.   
 Enter the following in the address bar of your web browser.   
 ```
 http:://{IP of ESP32}/
@@ -108,7 +107,6 @@ Sets the compass offset obtained by calibration.
 ESP32 acts as a web server.   
 I used [this](https://github.com/Molorius/esp32-websocket) component.   
 This component can communicate directly with the browser.   
-It's a great job.   
 Enter the following in the address bar of your web browser.   
 ```
 http:://{IP of ESP32}/
@@ -119,4 +117,8 @@ http://esp32.local/
 Click the mouse to change the display.   
 ![ak8975-heading-1](https://user-images.githubusercontent.com/6020549/232190029-ea4f85d6-8a32-46f7-9d71-04c42389296e.jpg)
 ![ak8975-heading-2](https://user-images.githubusercontent.com/6020549/232190031-57866343-e108-46f1-9d92-82666de43ae3.jpg)
+
+WEB pages are stored in the html folder.   
+I used [this](https://canvas-gauges.com/) for gauge display.   
+You can change the design and color according to your preference.   
 
