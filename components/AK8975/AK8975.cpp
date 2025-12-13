@@ -32,14 +32,12 @@ THE SOFTWARE.
 
 #include "AK8975.h"
 
-#if 0
 /** Default constructor, uses default I2C address.
  * @see AK8975_DEFAULT_ADDRESS
  */
 AK8975::AK8975() {
     devAddr = AK8975_DEFAULT_ADDRESS;
 }
-#endif
 
 /** Specific address constructor.
  * @param address I2C address

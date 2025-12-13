@@ -84,9 +84,7 @@ THE SOFTWARE.
 
 class AK8975 {
     public:
-#if 0
         AK8975();
-#endif
         AK8975(uint8_t address);
         
         void initialize();
