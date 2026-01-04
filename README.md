@@ -8,17 +8,13 @@ As you can see, the X and Y axes are quite off-center.
 And display the orientation.   
 ![ak8975-heading-1](https://user-images.githubusercontent.com/6020549/232190029-ea4f85d6-8a32-46f7-9d71-04c42389296e.jpg)
 
-
-
 # Software requiment
-ESP-IDF V4.4/V5.x.   
-ESP-IDF V5.0 is required when using ESP32-C2.   
+ESP-IDF V5.0 or later.   
+ESP-IDF V4.4 release branch reached EOL in July 2024.   
 ESP-IDF V5.1 is required when using ESP32-C6.   
-
 
 # Hardware requirements
 AK8975 3-axis Electronic Compass   
-
 
 # Wireing
 |AK8975||ESP32|ESP32-S2/S3|ESP32-C2/C3/C6||
