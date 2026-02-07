@@ -78,16 +78,12 @@ THE SOFTWARE.
 
 #define AK8975_I2CDIS_BIT         0
 
-// Arduino macro
-#define micros() (unsigned long) (esp_timer_get_time())
-#define delay(ms) esp_rom_delay_us(ms*1000)
-
 class AK8975 {
     public:
         AK8975();
-        AK8975(uint8_t address);
+        AK8975(uint16_t address);
         
-        void initialize();
+        void initialize(uint32_t clkSpeed);
         bool testConnection();
 
         // WIA register
@@ -131,7 +127,8 @@ class AK8975 {
         void setAdjustmentZ(uint8_t z);
 
     private:
-        uint8_t devAddr;
+        uint16_t devAddr; // I2C device address
+        i2c_master_dev_handle_t devHandle; // I2C device handle
         uint8_t buffer[6];
         uint8_t mode;
 };
