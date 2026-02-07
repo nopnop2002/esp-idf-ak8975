@@ -7,7 +7,6 @@
 #include "esp_timer.h"
 #include "esp_log.h"
 #include "esp_err.h"
-#include "driver/i2c.h"
 #include "cJSON.h"
 
 extern MessageBufferHandle_t xMessageBufferToClient;
@@ -22,12 +21,6 @@ static const char *TAG = "MAG";
 #define RAD_TO_DEG (180.0/M_PI)
 #define DEG_TO_RAD 0.0174533
 
-#if 0
-// Arduino macro
-#define micros() (unsigned long) (esp_timer_get_time())
-#define delay(ms) esp_rom_delay_us(ms*1000)
-#endif
-
 AK8975 mag(CONFIG_I2C_ADDR);
 
 // MAG Data Sensitivity adjustment data
@@ -37,7 +30,7 @@ float MagCalibration[3];
 
 void ak8975(void *pvParameters){
 	// Initialize device
-	mag.initialize();
+	mag.initialize(400000);
 	
 	if (!mag.testConnection()) {
 		ESP_LOGE(TAG, "testConnection fail");
@@ -47,11 +40,11 @@ void ak8975(void *pvParameters){
 	// Goto Powerdown Mode
 	mag.setMode(AK8975_MODE_POWERDOWN);
 	// After power-down mode is set, at least 100ms(Twat) is needed before setting another mode.
-	delay(200);
+	vTaskDelay(pdMS_TO_TICKS(200));
   
 	// Goto Fuse ROM access mode
 	mag.setMode(AK8975_MODE_FUSEROM);
-	delay(200);
+	vTaskDelay(pdMS_TO_TICKS(200));
   
 	// Get Sensitivity adjustment value from fuse ROM
 	// Sensitivity adjustment values for each axis are written in the fuse ROM at the time of shipment.
@@ -69,7 +62,7 @@ void ak8975(void *pvParameters){
   
 	// Goto Powerdown Mode
 	mag.setMode(AK8975_MODE_POWERDOWN);
-	delay(200);
+	vTaskDelay(pdMS_TO_TICKS(200));
   
 	while(1){
 		// Goto Single Mode
