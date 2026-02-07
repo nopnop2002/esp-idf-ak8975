@@ -77,6 +77,7 @@ If you set the offset you got from the calibration and run it again, the circle 
 
 ![ak8975-calib-2](https://user-images.githubusercontent.com/6020549/229249457-0ef43ec7-b7a6-42a4-bb99-2e4ffa76533c.jpg)
 
+
 # Display the orientation   
 ```
 git clone https://github.com/nopnop2002/esp-idf-ak8975
@@ -86,10 +87,12 @@ idf.py menuconfig
 idf.py flash
 ```
 
+
 ### Configuration   
 Sets the compass offset obtained by calibration.   
 ![config-top](https://user-images.githubusercontent.com/6020549/229249348-21ca8f80-e976-4ddb-8bca-435c475a3290.jpg)
 ![config-app](https://user-images.githubusercontent.com/6020549/229249346-0da21399-9640-4708-bdb6-beed7549d55a.jpg)
+
 
 ### View orientation   
 ESP32 acts as a web server.   
@@ -108,5 +111,5 @@ Click the mouse to change the display.
 
 WEB pages are stored in the html folder.   
 I used [this](https://canvas-gauges.com/) for gauge display.   
+All Configuration Options for the gauge display is [here](https://canvas-gauges.com/documentation/user-guide/configuration).   
 You can change the design and color according to your preference.   
-All Configuration Options is [here](https://canvas-gauges.com/documentation/user-guide/configuration).   
