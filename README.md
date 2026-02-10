@@ -77,7 +77,7 @@ If you set the offset you got from the calibration and run it again, the circle 
 ![ak8975-calib-2](https://user-images.githubusercontent.com/6020549/229249457-0ef43ec7-b7a6-42a4-bb99-2e4ffa76533c.jpg)
 
 
-# Display the orientation   
+# Measurement   
 ```
 git clone https://github.com/nopnop2002/esp-idf-ak8975
 cd esp-idf-ak8975/heading
@@ -93,7 +93,7 @@ Sets the compass offset obtained by calibration.
 ![config-app](https://user-images.githubusercontent.com/6020549/229249346-0da21399-9640-4708-bdb6-beed7549d55a.jpg)
 
 
-### View orientation   
+### Displaying the orientation   
 ESP32 acts as a web server.   
 I used [this](https://github.com/Molorius/esp32-websocket) component.   
 This component can communicate directly with the browser.   
@@ -112,3 +112,43 @@ WEB pages are stored in the html folder.
 I used [this](https://canvas-gauges.com/) for gauge display.   
 Configuration Options for the gauge display is [here](https://canvas-gauges.com/documentation/user-guide/configuration).   
 You can change the design and color according to your preference.   
+
+# Displaying the orientation using panda3d library   
+You can use [this](https://www.panda3d.org/) library to display the orientation.   
+panda.py acts as a UDP display server.   
+
+```
++-------------+          +-------------+          +-------------+
+|             |          |             |          |             |
+|   AK8975    |--(ic2)-->|    ESP32    |--(UDP)-->|  panda.py   |
+|             |          |             |          |             |
++-------------+          +-------------+          +-------------+
+```
+
+### Installation for Linux
+```
+$ python3 --version
+Python 3.11.2
+$ sudo apt install python3-pip python3-setuptools
+$ python3 -m pip install -U pip
+$ python3 -m pip install panda3d
+$ python3 -m pip install numpy
+$ cd esp-idf-ak8975/panda3d
+$ python3 panda.py
+```
+![Image](https://github.com/user-attachments/assets/ed2b56ca-ffe4-47b9-ab22-371be250626a)
+
+### Installation for Windows
+Install Git for Windows from [here](https://gitforwindows.org/).   
+Install Python Releases for Windows from [here](https://www.python.org/downloads/windows/).   
+Open Git Bash and run:   
+```
+$ python --version
+Python 3.11.9
+$ python -m pip install -U pip
+$ python -m pip install panda3d
+$ python -m pip install numpy
+$ cd esp-idf-ak8975p/panda3d
+$ python panda.py
+```
+![Image](https://github.com/user-attachments/assets/619fed49-92d6-4bef-94f2-f9c3373a67a7)
