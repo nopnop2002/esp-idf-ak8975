@@ -3,12 +3,16 @@
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "freertos/queue.h"
 #include "freertos/message_buffer.h"
 #include "esp_timer.h"
 #include "esp_log.h"
 #include "esp_err.h"
 #include "cJSON.h"
 
+#include "parameter.h"
+
+extern QueueHandle_t xQueueTrans;
 extern MessageBufferHandle_t xMessageBufferToClient;
 
 static const char *TAG = "MAG";
@@ -102,6 +106,15 @@ void ak8975(void *pvParameters){
 			while (heading < 0) heading += 360;
 			while (heading > 360) heading -= 360;
 			ESP_LOGI(TAG, "heading=%f", heading);
+
+			// Send UDP packet
+			POSE_t pose;
+			pose.roll = 0.0;
+			pose.pitch = 0.0;
+			pose.yaw = heading;
+			if (xQueueSend(xQueueTrans, &pose, 100) != pdPASS ) {
+				ESP_LOGE(pcTaskGetName(NULL), "xQueueSend fail");
+			}
 
 			// Send WEB request
 			cJSON *request;
