@@ -137,7 +137,7 @@ $ python3 -m pip install numpy
 $ cd esp-idf-ak8975/panda3d
 $ python3 panda.py
 ```
-![Image](https://github.com/user-attachments/assets/ed2b56ca-ffe4-47b9-ab22-371be250626a)
+![Image](https://github.com/user-attachments/assets/07887a5a-3a08-48c0-a0fd-c5e1f06d9db0)
 
 ### Installation for Windows
 Install Git for Windows from [here](https://gitforwindows.org/).   
@@ -152,4 +152,4 @@ $ python -m pip install numpy
 $ cd esp-idf-ak8975p/panda3d
 $ python panda.py
 ```
-![Image](https://github.com/user-attachments/assets/619fed49-92d6-4bef-94f2-f9c3373a67a7)
+![Image](https://github.com/user-attachments/assets/43c9a23f-6f9b-4e11-83a4-c88b2905cfbe)
