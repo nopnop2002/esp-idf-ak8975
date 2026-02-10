@@ -114,9 +114,10 @@ Configuration Options for the gauge display is [here](https://canvas-gauges.com/
 You can change the design and color according to your preference.   
 
 # Show direction using panda3d library   
+The ESP32 provides the measured angle over UDP.   
+panda.py acts as a UDP display server.   
 The Earth's angle follows the sensor angle.   
 I used [this](https://www.panda3d.org/) library.   
-panda.py acts as a UDP display server.   
 The earth texture was borrowed from [here](https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/base-map/).   
 
 ```
