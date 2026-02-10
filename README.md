@@ -151,7 +151,7 @@ Python 3.11.9
 $ python -m pip install -U pip
 $ python -m pip install panda3d
 $ python -m pip install numpy
-$ cd esp-idf-ak8975p/panda3d
+$ cd esp-idf-ak8975/panda3d
 $ python panda.py
 ```
 ![Image](https://github.com/user-attachments/assets/43c9a23f-6f9b-4e11-83a4-c88b2905cfbe)
