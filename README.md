@@ -77,7 +77,7 @@ If you set the offset you got from the calibration and run it again, the circle 
 ![ak8975-calib-2](https://user-images.githubusercontent.com/6020549/229249457-0ef43ec7-b7a6-42a4-bb99-2e4ffa76533c.jpg)
 
 
-# Measurement   
+# Show direction   
 ```
 git clone https://github.com/nopnop2002/esp-idf-ak8975
 cd esp-idf-ak8975/heading
@@ -93,7 +93,7 @@ Sets the compass offset obtained by calibration.
 ![config-app](https://user-images.githubusercontent.com/6020549/229249346-0da21399-9640-4708-bdb6-beed7549d55a.jpg)
 
 
-### Displaying the orientation   
+### Show direction   
 ESP32 acts as a web server.   
 I used [this](https://github.com/Molorius/esp32-websocket) component.   
 This component can communicate directly with the browser.   
@@ -113,8 +113,8 @@ I used [this](https://canvas-gauges.com/) for gauge display.
 Configuration Options for the gauge display is [here](https://canvas-gauges.com/documentation/user-guide/configuration).   
 You can change the design and color according to your preference.   
 
-# Displaying the orientation using panda3d library   
-You can use [this](https://www.panda3d.org/) library to display the orientation.   
+# Show direction using panda3d library   
+You can show direction using [this](https://www.panda3d.org/) library.   
 panda.py acts as a UDP display server.   
 The earth texture was borrowed from [here](https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/base-map/).   
 
