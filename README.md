@@ -116,6 +116,7 @@ You can change the design and color according to your preference.
 # Displaying the orientation using panda3d library   
 You can use [this](https://www.panda3d.org/) library to display the orientation.   
 panda.py acts as a UDP display server.   
+The earth texture was borrowed from [here](https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/base-map/).   
 
 ```
 +-------------+          +-------------+          +-------------+
