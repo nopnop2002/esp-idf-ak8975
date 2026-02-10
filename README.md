@@ -114,7 +114,8 @@ Configuration Options for the gauge display is [here](https://canvas-gauges.com/
 You can change the design and color according to your preference.   
 
 # Show direction using panda3d library   
-You can show direction using [this](https://www.panda3d.org/) library.   
+You can show Earth's angle using [this](https://www.panda3d.org/) library.   
+The Earth's angle follows the sensor angle.   
 panda.py acts as a UDP display server.   
 The earth texture was borrowed from [here](https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/base-map/).   
 
