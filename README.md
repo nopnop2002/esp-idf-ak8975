@@ -154,4 +154,4 @@ $ python -m pip install numpy
 $ cd esp-idf-ak8975/panda3d
 $ python panda.py
 ```
-![Image](https://github.com/user-attachments/assets/43c9a23f-6f9b-4e11-83a4-c88b2905cfbe)
+![Image](https://github.com/user-attachments/assets/1e60fd2f-8d9a-4b3d-98a2-e538b1964bf8)
