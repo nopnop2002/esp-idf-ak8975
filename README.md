@@ -5,7 +5,7 @@ First, find the offset value for each axis.
 As you can see, the X and Y axes are quite off-center.   
 ![ak8975-calib-1](https://user-images.githubusercontent.com/6020549/229248487-4ef39253-7bc9-4c86-a70f-0af2390a5973.jpg)
 
-And display the orientation.   
+It then displays the orientation based on the geomagnetic field.   
 ![ak8975-heading-1](https://user-images.githubusercontent.com/6020549/232190029-ea4f85d6-8a32-46f7-9d71-04c42389296e.jpg)
 
 # Software requirements
@@ -77,7 +77,7 @@ If you set the offset you got from the calibration and run it again, the circle 
 ![ak8975-calib-2](https://user-images.githubusercontent.com/6020549/229249457-0ef43ec7-b7a6-42a4-bb99-2e4ffa76533c.jpg)
 
 
-# Show direction   
+# Show orientation   
 ```
 git clone https://github.com/nopnop2002/esp-idf-ak8975
 cd esp-idf-ak8975/heading
@@ -93,7 +93,7 @@ Sets the compass offset obtained by calibration.
 ![config-app](https://user-images.githubusercontent.com/6020549/229249346-0da21399-9640-4708-bdb6-beed7549d55a.jpg)
 
 
-### Show direction   
+### Show orientation   
 ESP32 acts as a web server.   
 I used [this](https://github.com/Molorius/esp32-websocket) component.   
 This component can communicate directly with the browser.   
@@ -113,7 +113,7 @@ I used [this](https://canvas-gauges.com/) for gauge display.
 Configuration Options for the gauge display is [here](https://canvas-gauges.com/documentation/user-guide/configuration).   
 You can change the design and color according to your preference.   
 
-# Show direction using panda3d library   
+# Show orientation using panda3d library   
 The ESP32 provides the measured angle over UDP.   
 panda.py acts as a UDP display server.   
 The Earth's angle follows the sensor angle.   
